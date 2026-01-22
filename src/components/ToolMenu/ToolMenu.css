@@ -1,0 +1,44 @@
+.tool-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tool-menu h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.tool-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tool-menu li {
+  margin-bottom: 8px;
+}
+
+.tool-menu button {
+  width: 100%;
+  padding: 10px 12px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  color: #444;
+  transition: background 0.2s, color 0.2s;
+}
+
+.tool-menu button:hover {
+  background-color: #f0fdfa;
+}
+
+.tool-menu button.active {
+  background-color: #2cb1a1;
+  color: #fff;
+  font-weight: 600;
+}

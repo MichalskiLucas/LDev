@@ -1,0 +1,26 @@
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr 240px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 60px);
+}
+
+.tool-menu {
+  padding: 20px;
+  border-right: 1px solid #e5e5e5;
+}
+
+.content {
+  padding: 40px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.ads-area {
+  padding: 20px;
+  border-left: 1px solid #e5e5e5;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+}

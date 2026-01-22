@@ -1,0 +1,205 @@
+.home-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+
+  display: flex;
+  gap: 20px;
+}
+
+/* Área principal (menu + ferramenta) */
+.main-area {
+  flex: 3;
+  display: flex;
+  gap: 20px;
+}
+
+/* Área da ferramenta */
+.tool-container {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Sidebar de anúncios */
+.ads-container {
+  flex: 1;
+  min-width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  color: #555;
+}
+
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+  .ads-container {
+    min-width: 100%;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-group input {
+  width: 120px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.generate-button {
+  padding: 10px 20px;
+  background-color: #2ec4b6;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.generate-button:hover {
+  opacity: 0.9;
+}
+
+.result-container {
+  margin-top: 30px;
+}
+
+.result-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.result-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.result-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-family: monospace;
+}
+
+@media (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+  .main-area {
+    flex-direction: column;
+  }
+
+  .ads-container {
+    min-width: 100%;
+  }
+}
+
+.toggle-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #ffffff;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+  background-color: #2ec4b6;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(22px);
+}
+
+.controls-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100px;
+}
+
+.controls-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.controls-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.generate-button {
+  min-width: 160px;
+}
+
+@media (max-width: 600px) {
+  .controls-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
