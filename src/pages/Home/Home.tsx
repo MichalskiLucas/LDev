@@ -15,7 +15,9 @@ function Home() {
     return null;
   }
 
-  const ActiveComponent = tools[toolKey].component;
+  const ActiveComponent = tools[toolKey]?.component;
+  
+  if (!ActiveComponent) return <div>Ferramenta não encontrada</div>;
 
   return (
     <div className="layout">
