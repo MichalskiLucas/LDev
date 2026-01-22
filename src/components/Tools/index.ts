@@ -1,7 +1,7 @@
-import CnpjGenerator from "./Cnpj/CnpjGenerator";
-import CpfGenerator from "./Cpf/CpfGenerator";
-import CnpjAlfanumerico from "./CnpjAlfanumerico/CnpjAlfanumerico";
-import validarCnpjAlfanumerico from "./CnpjAlfanumerico/ValidarCnpjAlfanumerico";
+import CnpjGenerator from "./cnpj/CnpjGenerator";
+import CpfGenerator from "./cpf/CpfGenerator";
+import CnpjAlfanumerico from "./cnpj-alfanumerico/CnpjAlfanumerico";
+import validarCnpjAlfanumerico from "./cnpj-alfanumerico/ValidarCnpjAlfanumerico";
 
 export const tools = {
   cnpj: {

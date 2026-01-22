@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CNPJAlfanumerico } from "../CnpjAlfanumerico/cnpjAlfanumerico.logic";
+import { CNPJAlfanumerico } from "./cnpjAlfanumerico.logic";
 
 function ValidarCnpjAlfanumerico() {
   const [value, setValue] = useState("");

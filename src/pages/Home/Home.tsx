@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
-import ToolMenu from "../../components/ToolMenu/ToolMenu";
-import { tools, type ToolKey } from "../../components/Tools";
+import ToolMenu from "../../components/tool-menu/ToolMenu";
+import { tools, type ToolKey } from "../../components/tools";
 
 function Home() {
   const { tool } = useParams<{ tool: ToolKey }>();

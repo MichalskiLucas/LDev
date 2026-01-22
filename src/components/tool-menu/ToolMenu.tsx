@@ -1,5 +1,5 @@
-import { tools } from "../Tools";
-import type { ToolKey } from "../Tools";
+import { tools } from "../tools";
+import type { ToolKey } from "../tools";
 import "./toolMenu.css";
 
 interface ToolMenuProps {
