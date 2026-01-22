@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { generateCPF, formatCPF } from "./cpf.logic";
-import "../Cnpj/cnpj.css";
+import "../cnpj/cnpj.css";
 
 function CpfGenerator() {
   const [quantity, setQuantity] = useState<number>(1);
