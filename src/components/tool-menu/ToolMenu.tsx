@@ -1,6 +1,6 @@
 import { tools } from "../tools";
 import type { ToolKey } from "../tools";
-import "./toolMenu.css";
+import "./ToolMenu.css";
 
 interface ToolMenuProps {
   activeTool: ToolKey;
